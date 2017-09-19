@@ -1,9 +1,4 @@
 {
-  "version": "1.2.11",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ryami333/react-accessible-tooltip.git"
-  },
   "private": true,
   "workspaces": [
     "packages/react-accessible-tooltip",
