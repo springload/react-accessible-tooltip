@@ -34,7 +34,9 @@ class Tooltip extends Component<TooltipProps, TooltipState> {
     }
 
     toggle() {
-        this.setState({ isHidden: !this.state.isHidden });
+        this.setState({
+            isHidden: !this.state.isHidden,
+        });
     }
 
     node: ?HTMLDivElement;

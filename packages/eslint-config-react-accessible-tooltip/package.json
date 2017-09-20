@@ -1,0 +1,16 @@
+{
+    "name": "eslint-config-react-accessible-tooltip",
+    "license": "UNLICENSED",
+    "version": "1.2.11",
+    "main": "index.js",
+    "dependencies": {
+        "eslint-config-airbnb": "^15.1.0",
+        "eslint-config-prettier": "^2.4.0",
+        "eslint-plugin-flowtype": "^2.35.1",
+        "eslint-plugin-import": "^2.7.0",
+        "eslint-plugin-jest": "^21.0.2",
+        "eslint-plugin-jsx-a11y": "^5.1.1",
+        "eslint-plugin-prettier": "^2.2.0",
+        "eslint-plugin-react": "^7.3.0"
+    }
+}
