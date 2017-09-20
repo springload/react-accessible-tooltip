@@ -1,6 +1,7 @@
 {
   "private": true,
   "workspaces": [
+    "packages/babel-preset-react-accessible-tooltip",
     "packages/react-accessible-tooltip",
     "packages/docs"
   ]
