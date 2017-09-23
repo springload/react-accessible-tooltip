@@ -42,7 +42,7 @@
     "build:flow": "NODE_ENV=production flow-copy-source src dist/es",
     "build:rollup": "NODE_ENV=production rollup -c",
     "build": "yarn build:rollup && yarn build:flow",
-    "dev": "rollup -c -w",
+    "start": "rollup -c -w",
     "test": "jest src",
     "lint": "eslint src"
   },
