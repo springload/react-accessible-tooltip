@@ -1,9 +1,9 @@
 // @flow
 
 import React from 'react';
+import Tooltip from '../Tooltip/Tooltip';
 import Container from '../Container/Container';
 import './content.scss';
-import Tooltip from '../Tooltip/Tooltip';
 
 function Content() {
     return (

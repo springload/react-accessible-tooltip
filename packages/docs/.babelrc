@@ -1,0 +1,7 @@
+{    
+    "presets": [
+        ["react-accessible-tooltip", { 
+            "modules": false
+        }]
+    ]
+}

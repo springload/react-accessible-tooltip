@@ -8,11 +8,11 @@ const config = {
     entry: (() => {
         if (process.env.NODE_ENV === 'production') {
             return {
-                'demo/main.js': ['./demo/main.js'],
+                'src/main.js': ['./src/main.js'],
             };
         }
         return {
-            'demo/main.js': ['react-hot-loader/patch', './demo/main.js'],
+            'src/main.js': ['react-hot-loader/patch', './src/main.js'],
         };
     })(),
 
@@ -40,12 +40,17 @@ const config = {
         rules: [
             {
                 test: /\.js$/,
-                exclude: /(node_modules)/,
-                use: [
-                    'react-hot-loader/webpack',
-                    'babel-loader',
-                    'eslint-loader',
+                exclude: [
+                    /(node_modules)/,
+                    /(packages\/react-accessible-tooltip)/,
                 ],
+                enforce: 'pre',
+                use: 'eslint-loader',
+            },
+            {
+                test: /\.js$/,
+                exclude: /(node_modules)/,
+                use: ['react-hot-loader/webpack', 'babel-loader'],
             },
             {
                 test: /\.scss$/,
@@ -82,7 +87,7 @@ const config = {
         // Generate a root HTML file with a <script> appended to the <body> tag.
         let plugins = [
             new HtmlWebpackPlugin({
-                template: 'demo/index.html',
+                template: path.resolve(__dirname, 'src/index.html'),
                 inject: 'body',
             }),
         ];
