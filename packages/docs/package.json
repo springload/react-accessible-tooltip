@@ -30,6 +30,8 @@
   },
   "scripts": {
     "lint:flow": "flow src/",
+    "lint:eslint": "eslint src/",
+    "lint": "yarn lint:flow && yarn lint:eslint",
     "build": "NODE_ENV=production webpack -p",
     "start": "webpack-dev-server"
   }
