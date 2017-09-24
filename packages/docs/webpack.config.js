@@ -8,7 +8,7 @@ const config = {
     entry: (() => {
         if (process.env.NODE_ENV === 'production') {
             return {
-                'src/main.js': ['./src/main.js'],
+                'src/main.js': path.resolve(__dirname, './src/main.js'),
             };
         }
         return {
@@ -21,7 +21,7 @@ const config = {
 
         if (process.env.NODE_ENV === 'production') {
             output = Object.assign({}, output, {
-                path: path.resolve(__dirname, 'docs'),
+                path: path.resolve(__dirname, 'dist'),
                 publicPath: '',
                 filename: '[name][chunkhash].js',
             });
